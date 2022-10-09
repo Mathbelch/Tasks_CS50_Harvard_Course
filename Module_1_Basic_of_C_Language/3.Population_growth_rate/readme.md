@@ -9,7 +9,7 @@
 </p><br>
 <b>Growth Rate per year:</b><br>
 
-$$ Population = (population + (population/3) - (population/4)) $$
+$$ Population = population + \frac{population}{3} - \frac{population}{4} $$
 
 <p><b>Tests:</b><br>
 <ul>
