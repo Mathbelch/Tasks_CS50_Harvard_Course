@@ -107,7 +107,7 @@ void substitution_cipher(char key[], FILE *plain_text)
                         break;
                     }
                 }
-        }
+            }
     fprintf(cipher_text,"%c", aux);
     }
     fclose(plain_text);
