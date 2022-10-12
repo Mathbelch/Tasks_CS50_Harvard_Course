@@ -1,5 +1,5 @@
 <h1>Scrabble</h1>
-<p><b>TASK:</b> Create an algorithm that receives the number of players, each of their words and the print the numbers made for each player and who is the winner, using the <b> Scrabble </b>table points.</p>
+<p><b>TASK:</b> Create an algorithm that receives the number of players, each of their words and then print the numbers made for each player and who is the winner, using the <b> Scrabble </b>table points.</p>
 
 <p><b>Context:</b><br>
 On the <a href="https://scrabble.hasbro.com/en-us/rules" target="_blank">Scrabble </a>game the players need to create words to gain points. The amount of points for each player is the sum of the points earned for each letter of the word, according to the table below, and disconsidering if the letter is upper or lower case.
@@ -63,6 +63,8 @@ On the <a href="https://scrabble.hasbro.com/en-us/rules" target="_blank">Scrabbl
         <td >10</td>
     </tr>
 </table>
+
+<p><b>Test:</b> Test the code with own your words. Have fun!
 
 
 
