@@ -64,7 +64,7 @@ On the <a href="https://scrabble.hasbro.com/en-us/rules" target="_blank">Scrabbl
     </tr>
 </table>
 
-<p><b>Test:</b> Test the code with own your words. Have fun!
+<p><b>Test:</b> Test the code with your own words. Have fun!
 
 
 
