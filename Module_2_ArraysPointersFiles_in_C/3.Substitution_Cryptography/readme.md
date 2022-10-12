@@ -1,58 +1,80 @@
-<h1>Caesar_Cryptography</h1>
-<p><b>TASK:</b> Create an algorithm that receives a key, then read a text file (plain text) and encrypts it using the <b> Caesar Method </b>, then prints the encrypted text (ciphertext) in an output file.</p>
+<h1>Substitution_Cryptography</h1>
+<p><b>TASK:</b> Create an algorithm that asks for a <b>substitution key</b>, then read a text file (plain text) and encrypts it using the <b> Monoalphabetic Cipher Method </b>. Finally prints the encrypted text (ciphertext) in an output file.</p>
+
 
 <p><b>Context:</b><br>
-The <a href="http://practicalcryptography.com/ciphers/caesar-cipher/" target="_blank">Caesar criptography method </a>consists in encrypt messages by “rotating” each letter in <b>k</b> positions, where K is the <b>Key</b>. That means each letter in the plain text will be replaced by the letter <b>k</b> position in front of it, alphabetically.
-<br>
-Considering there are 26 letters in the alphabet, it is important to make the algorithm in a way that it returns back to the beginning if <b>k</b> passes it through. The formula below may help:</p>
-<p align="center"> CypherChar = (PlainChar + key) % (26) </p>
+There are a lot of  <a href="https://binaryterms.com/substitution-technique-in-cryptography.html" target="_blank">substitution techniques</a> for cryptography. However, they all consist in the characters present in the original message being replaced by the other characters or numbers or by symbols (key).<br>
+The Monoalphabetic Cipher is a technique where the cipher alphabet for each plain text alphabet is fixed, for the entire encryption. That means the first letter of the key will replace A in the plain text. The second letter will replace b, and so on.</p>
+<p>As an example, for the following key and words sentence:<br>
+
+<table align="center">
+    <tr align="center">
+        <th>alphabet</th>
+        <th>A</th>
+        <th >B</th>
+        <th >C</th>
+        <th >D</th>
+        <th >E</th>
+        <th >F</th>
+        <th >G</th>
+        <th >H</th>
+        <th >I</th>
+        <th >J</th>
+        <th >K</th>
+        <th >L</th>
+        <th >M</th>
+        <th >N</th>
+        <th >O</th>
+        <th >P</th>
+        <th >Q</th>
+        <th >R</th>
+        <th >S</th>
+        <th >T</th>
+        <th >U</th>
+        <th >V</th>
+        <th >W</th>
+        <th >X</th>
+        <th >Y</th>
+        <th >Z</th>
+    </tr>
+        <tr align="center">
+        <td>key</td>
+        <td>K</td>
+        <td >E</td>
+        <td >Y</td>
+        <td >W</td>
+        <td >O</td>
+        <td >R</td>
+        <td >D</td>
+        <td >A</td>
+        <td >B</td>
+        <td >C</td>
+        <td >F</td>
+        <td >G</td>
+        <td >H</td>
+        <td >I</td>
+        <td >J</td>
+        <td >L</td>
+        <td >M</td>
+        <td >N</td>
+        <td >P</td>
+        <td >Q</td>
+        <td >S</td>
+        <td >T</td>
+        <td >U</td>
+        <td >V</td>
+        <td >X</td>
+        <td >W</td>
+    </tr>
+</table>
+
+</p>
+<br><p align="center">HELLO Word!<br>AOGGJ Ujnw!
 <p><b>Constraints:</b>
 <ul>
 <li>The usage must be by command line argumment, passing the key for cypher;</li>
-<li>The key must be a number greater than 0;</li>
+<li> The key must be a 26 characters sequence, with all alphabetical letters;</li>
 <li>Only letters must be altered, and their cases must be maintained (upper or lower);</li>
 <li>The plain_text must be read from a txt file and the cypher text must be printed in an output txt file;
 </ul>
 <br>
-
-<br>
-<p align="center"><b><u>Expected results for each test.txt file:</u></b>
-<table align="center">
-    <tr align="center">
-        <th>Test</th>
-        <th >Key</th>
-        <th align="center">Result</th>
-    </tr>
-    <tr>
-        <td rowspan="2">1</td>
-        <td >1</td>
-        <td align="center">IFMMP</td>
-    </tr>
-    <tr>
-        <td>13</td>
-        <td align="center">URYYB</td>
-    </tr>
-    <tr>
-        <td rowspan="2">2</td>
-        <td>13</td>
-        <td align="center">uryyb, jbeyq</td>
-    </tr>
-    <tr>
-        <td>17</td>
-        <td align="center">yvccf, nficu</td>
-    </tr>
-            <td rowspan="2">3</td>
-        <td>13</td>
-        <td align="center">or fher gb qevax lbhe Binygvar</td>
-    </tr>
-    <tr>
-        <td>8</td>
-        <td align="center">jm aczm bw lzqvs gwcz Wditbqvm</td>
-    </tr>
-
-
-
-
-
-
-
