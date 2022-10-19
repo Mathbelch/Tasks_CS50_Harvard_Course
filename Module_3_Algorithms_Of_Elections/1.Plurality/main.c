@@ -70,7 +70,7 @@ int main(int argc, char *argv[])
         printf("Vote: ");
         scanf("%s", name);
 
-        // Check for invalid vote (if the name informed is not on the list, we should give a warning and disconsider the vote)
+        // Check for invalid vote (if the name informed is not on the list, we should give a warning and don't consider the vote)
         if (!vote(name)) //Function vote will return false if that happens, if the vote is valid, we just count the vote.
         {
             printf("Invalid vote.\n");
@@ -99,7 +99,7 @@ int vote(char name[])
 // Function to compare the vote number and print the winner (or winners) of the election
 void print_winner(void)
 {
-    int winner_flag = 0; // Vamos guardar a posição do vencedor, ao invez de seu nome.
+    int winner_flag = 0; // Let's keep the winner's position, instead of its name.
     // Here let's fix a first winner.
     for (int i = 0; i < candidate_count; i++)
     {
