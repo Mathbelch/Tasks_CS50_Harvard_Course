@@ -22,7 +22,7 @@ pair;
 
 // Let's implement an array of candidates, saving their names (j) and thus using their position (i) on this array as a code to other functions.
 char candidates[MAX][50];
-// This array of the struct pairs allows us to save the positions of all winners and loosers for each pair where there is a winner and a looser.
+// This array of the struct pairs allows us to save the positions of all winners and looser for each pair where there is a winner and a looser.
 pair pairs[MAX * (MAX - 1) / 2];
 
 //Global variables
@@ -84,7 +84,7 @@ int main(int argc, char *argv[])
     int voter_count;
     printf("\nInsert the number of voters: ");
     scanf("%d",&voter_count);
-    if (isdigit(voter_count) != 0 || (voter_count <= 0)) //cheking if the value informed is a correct number > 0.
+    if (isdigit(voter_count) != 0 || (voter_count <= 0)) //checking if the value informed is a correct number > 0.
     {
         printf("Incorrect number of voters\n");
         sleep(5);
@@ -94,7 +94,7 @@ int main(int argc, char *argv[])
     // Query for votes
     for (int i = 0; i < voter_count; i++)
     {
-        // Declaring the array ranks[i], wich represents the voter's (i) preferences in order (j), re-declared for each new voter.
+        // Declaring the array ranks[i], which represents the voter's (i) preferences in order (j), re-declared for each new voter.
         int ranks[candidate_count];
 
         // Query for each rank:
@@ -225,7 +225,7 @@ int cycled(int winner, int loser)
     return 0;
 }
 
-/* This function must uptade the Locked 2-D array in order to create the locked gaph. For this we set the edges (by setting
+/* This function must update the Locked 2-D array in order to create the locked graph. For this we set the edges (by setting
 true in the array locked[i][j], meaning a locked arrow from i to j is 'drawn' on the graph) in decreasing order of victory
 strength, as long as that doesn't create a cycle (what will be checked by a true value returned from the function cycled.).*/
 void lock_pairs(void)

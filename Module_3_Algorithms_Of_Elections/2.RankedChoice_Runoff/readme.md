@@ -11,9 +11,10 @@ Instant Runoff</a>, where the election may need more than 1 turn to find the mos
 <ul>
 <li>The usage must be by command line argumment, passing the name of the candidates on the election. The maximum number of candidates is 9;</li>
 <li>Your algorithm must use a struct called cadidate to keep the candidate's names and number of votes, in adition to a bool value to indicate if the candidate is eliminated or not;</li>
-<li>Your algorithm must use an array called preferences[][] to keep track of ....;</li>
-<li>Your algorithm must have 5 functions: </li>
+<li>Your algorithm must use an array called preferences[][] to keep track of each voter's preferences rank;</li>
+<li>Your algorithm must have 6 functions: </li>
     <ul>
+    <li>Vote: must check if the name given is valid;</li>
     <li>Tabulate: must check voters' preferences and calculate the amount of votes for each candidate at each turn;</li>
     <li>Print winner: must print the winner of the election when there's one. It must be called at the end of each turn;</li>
     <li>Find min: If there's no winner at the end of the turn, this function will be called to find how many votes the candidate with the fewest number of votes received;</li>
