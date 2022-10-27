@@ -12,7 +12,9 @@
 <li><b>Sepia:</b> This is the classic old time filter, with its pixels' color values adjusted to the sepia scale, according to the following equations:
 
 $$ sepiaRed = 0.393 * originalRed + 0.769 * originalGreen + 0.189 - originalBlue $$
+
 $$ sepiaGreen = 0.349 * originalRed + 0.686 * originalGreen + 0.168 - originalBlue $$
+
 $$ sepiaBlue = 0.272 * originalRed + 0.534 * originalGreen + 0.131 - originalBlue $$
     
 </li><br>
