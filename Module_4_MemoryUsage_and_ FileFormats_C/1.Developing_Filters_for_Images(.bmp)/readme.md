@@ -44,7 +44,7 @@ $$ sepiaBlue = 0.272 * originalRed + 0.534 * originalGreen + 0.131 - originalBlu
 <img src="img/reflect.png" width="40%"> 
 </li><br>
 <li>Sepia:<br><br>
-<img src="img/sepia.png" width="40%"><img src="img/sepia_px.png" width="55%"> 
+<img src="img/sepia.png" width="40%"><img src="img/sepia_px.png" width="45%"> 
 </li><br>
 <li>Blur:<br><br>
 <img src="img/blur.png" width="40%"> 
