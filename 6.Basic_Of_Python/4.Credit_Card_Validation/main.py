@@ -1,15 +1,13 @@
 def main():
-    stringNumber = str(input("Number: "))
-    size = len(stringNumber)
-    if (luhnAlgorithm(stringNumber)):
-        searchFlag(stringNumber[0], stringNumber[1], size)
+    cardNumber = str(input("Number: "))
+    size = len(cardNumber)
+    if (luhnAlgorithm(cardNumber)):
+        searchFlag(cardNumber[0], cardNumber[1], size)
     else:
         print("INVALID\n")
 
 
-def luhnAlgorithm(stringNumber):
-    cardNumber = []
-    cardNumber = stringNumber
+def luhnAlgorithm(cardNumber):
     # sum1 will record the sum of the digits multiplied by two (starting from the one in the penultimate position, always jumping one position);
     sum1 = 0
     counter = len(cardNumber) - 2
@@ -18,8 +16,6 @@ def luhnAlgorithm(stringNumber):
         if (int(aux) < 10):
             sum1 += int(aux)
         else:
-            auxList = []
-            auxList = aux
             sum1 += int(aux[0]) + int(aux[1])
         counter -= 2
 
