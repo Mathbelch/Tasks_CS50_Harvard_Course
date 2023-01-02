@@ -13,6 +13,4 @@
 <p>Check the result of this task below</p>
 
 
-
-
-
+![exTrivia](https://user-images.githubusercontent.com/109366042/210260661-a7e3a93a-124f-4263-b1bd-3b34bfebf6e8.gif)
