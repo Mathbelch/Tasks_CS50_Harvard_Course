@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+
+        <script>
+
+            function updatePoints(points, pointsMark){
+                pointsMark.innerHTML = `Points: ${points} / 14`;
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+                let pointsMark = document.querySelector('#points');
+                let points = 0;
+                let answer1 = document.querySelector('#p1');
+                document.querySelector('#q1a').onclick = function(){
+                    answer1.innerHTML = "INCORRECT - Try again";
+                    document.querySelector('#q1a').style.backgroundColor = 'red';
+                    points --;
+                    updatePoints(points, pointsMark);
+                }
+                document.querySelector('#q1b').onclick = function(){
+                    answer1.innerHTML = "INCORRECT - Try again";
+                    document.querySelector('#q1b').style.backgroundColor = 'red';
+                    points --;
+                    updatePoints(points, pointsMark);
+                }
+                document.querySelector('#q1c').onclick = function(){
+                    answer1.innerHTML = "CORRECT - Well done";
+                    document.querySelector('#q1c').style.backgroundColor = 'green';
+                    points += 2;
+                    updatePoints(points, pointsMark);
+                }
+                document.querySelector('#q1d').onclick = function(){
+                    answer1.innerHTML = "INCORRECT - Try again";
+                    document.querySelector('#q1d').style.backgroundColor = 'red';
+                    points --;
+                    updatePoints(points, pointsMark);
+                }
+
+                let answer2 = document.querySelector('#p2');
+                document.querySelector('#q2a').onclick = function(){
+                    answer2.innerHTML = "CORRECT - Well done";
+                    document.querySelector('#q2a').style.backgroundColor = 'green';
+                    points += 2;
+                    updatePoints(points, pointsMark);
+                }
+                document.querySelector('#q2b').onclick = function(){
+                    answer2.innerHTML = "INCORRECT - Try again";
+                    document.querySelector('#q2b').style.backgroundColor = 'red';
+                    points --;
+                    updatePoints(points, pointsMark);
+                }
+                document.querySelector('#q2c').onclick = function(){
+                    answer2.innerHTML = "INCORRECT - Try again";
+                    document.querySelector('#q2c').style.backgroundColor = 'red';
+                    points --;
+                    updatePoints(points, pointsMark);
+                }
+                document.querySelector('#q2d').onclick = function(){
+                    answer2.innerHTML = "INCORRECT - Try again";
+                    document.querySelector('#q2d').style.backgroundColor = 'red';
+                    points --;
+                    updatePoints(points, pointsMark);
+                }
+
+                let answer3 = document.querySelector('#p3');
+                document.querySelector('#q3a').onclick = function(){
+                    answer3.innerHTML = "INCORRECT - Try again";
+                    document.querySelector('#q3a').style.backgroundColor = 'red';
+                    points --;
+                    updatePoints(points, pointsMark);
+                }
+                document.querySelector('#q3b').onclick = function(){
+                    answer3.innerHTML = "CORRECT - Well done";
+                    document.querySelector('#q3b').style.backgroundColor = 'green';
+                    points += 2;
+                    updatePoints(points, pointsMark);
+                }
+                document.querySelector('#q3c').onclick = function(){
+                    answer3.innerHTML = "INCORRECT - Try again";
+                    document.querySelector('#q3c').style.backgroundColor = 'red';
+                    points --;
+                    updatePoints(points, pointsMark);
+                }
+                document.querySelector('#q3d').onclick = function(){
+                    answer3.innerHTML = "INCORRECT - Try again";
+                    document.querySelector('#q3d').style.backgroundColor = 'red';
+                    points --;
+                    updatePoints(points, pointsMark);
+                }
+
+                let txtAnswer1 = document.querySelector('#q1');
+                document.querySelector('#q1submit').onclick= function() {
+                    if(document.querySelector('#q1txt').value == 'IP') {
+                        txtAnswer1.innerHTML = "CORRECT - Well done";
+                        document.querySelector('#q1txt').style.color = 'green';
+                        points += 2;
+                        updatePoints(points, pointsMark);
+                    }
+                    else {
+                        txtAnswer1.innerHTML = "INCORRECT - Try again";
+                        document.querySelector('#q1txt').style.color = 'red';
+                        points --;
+                        updatePoints(points, pointsMark);
+                    }
+                }
+
+                let txtAnswer2 = document.querySelector('#q2');
+                document.querySelector('#q2submit').onclick= function() {
+                    if(document.querySelector('#q2txt').value == 'TCP') {
+                        txtAnswer2.innerHTML = "CORRECT - Well done";
+                        document.querySelector('#q2txt').style.color = 'green';
+                        points += 2;
+                        updatePoints(points, pointsMark);
+                    }
+                    else {
+                        txtAnswer2.innerHTML = "INCORRECT - Try again";
+                        document.querySelector('#q2txt').style.color = 'red';
+                        points --;
+                        updatePoints(points, pointsMark);
+                    }
+                }
+
+                let txtAnswer3 = document.querySelector('#q3');
+                document.querySelector('#q3submit').onclick= function() {
+                    if(document.querySelector('#q3txt').value == 'HTTP') {
+                        txtAnswer3.innerHTML = "CORRECT - Well done";
+                        document.querySelector('#q3txt').style.color = 'green';
+                        points += 2;
+                        updatePoints(points, pointsMark);
+                    }
+                    else {
+                        txtAnswer3.innerHTML = "INCORRECT - Try again";
+                        document.querySelector('#q3txt').style.color = 'red';
+                        points --;
+                        updatePoints(points, pointsMark);
+                    }
+                }
+
+                let txtAnswer4 = document.querySelector('#q4');
+                document.querySelector('#q4submit').onclick= function() {
+                    if(document.querySelector('#q4txt').value == 'HTTPS') {
+                        txtAnswer4.innerHTML = "CORRECT - Well done";
+                        document.querySelector('#q4txt').style.color = 'green';
+                        points += 2;
+                        updatePoints(points, pointsMark);
+                    }
+                    else {
+                        txtAnswer4.innerHTML = "INCORRECT - Try again";
+                        document.querySelector('#q4txt').style.color = 'red';
+                        points --;
+                        updatePoints(points, pointsMark);
+                    }
+                }
+            });
+
+        </script>
+
+    </head>
+    <body>
+
+        <div class="jumbotron">
+            <h1>Web Development Trivia!</h1>
+            <p id="points">Points: 0 / 14</p>
+            <p>For each correct answer you get 2 points. For each incorrect answer you lose 1 point!</p>
+        </div>
+
+        <div class="container">
+
+            <div class="section">
+
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+
+                <div>
+                    <h3>What is the hypertext markup language most used to implement web pages?</h3>
+                    <p id="p1"></p>
+                    <button id="q1a">CSS</button>
+                    <button id="q1b">JS</button>
+                    <button id="q1c">HTML</button>
+                    <button id="q1d">Python</button>
+                </div>
+
+                <div>
+                    <h3>What is the cascading style sheet language most used to give style to web pages?</h3>
+                    <p id="p2"></p>
+                    <button id="q2a">CSS</button>
+                    <button id="q2b">JS</button>
+                    <button id="q2c">HTML</button>
+                    <button id="q2d">Python</button>
+                </div>
+
+                <div>
+                    <h3>What is the programming language most used to make web pages dinamic and iterative?</h3>
+                    <p id="p3"></p>
+                    <button id="q3a">CSS</button>
+                    <button id="q3b">JS</button>
+                    <button id="q3c">HTML</button>
+                    <button id="q3d">Python</button>
+                </div>
+
+            </div>
+
+            <div class="section">
+
+                <h2>Part 2: Free Response</h2>
+                <hr>
+
+                <div>
+                    <h3>What is the acronym of the protocol that refers to computers' adresses?</h3>
+                    <p id="q1"></p>
+                    <input type="text" placeholder="Enter your answer in CAPS" id="q1txt">
+                    <button id="q1submit">Check Answer</button>
+                </div>
+
+                <div>
+                    <h3>What is the acronym of the protocol that refers to the transmition of data packages from one computer to another?</h3>
+                    <p id="q2"></p>
+                    <input type="text" placeholder="Enter your answer in CAPS" id="q2txt">
+                    <button id="q2submit">Check Answer</button>
+                </div>
+
+                <div>
+                    <h3>What is the acronym of the protocol that refers to the simple transmition of hipertext?</h3>
+                    <p id="q3"></p>
+                    <input type="text" placeholder="Enter your answer in CAPS" id="q3txt">
+                    <button id="q3submit">Check Answer</button>
+                </div>
+
+                <div>
+                    <h3>What is the acronym of the protocol that refers to the secure transmition of hipertext?</h3>
+                    <p id="q4"></p>
+                    <input type="text" placeholder="Enter your answer in CAPS" id="q4txt">
+                    <button id="q4submit">Check Answer</button>
+                </div>
+
+
+            </div>
+
+        </div>
+    </body>
+</html>
