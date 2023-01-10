@@ -1,4 +1,4 @@
-<h1>Crating a Trivia Game WebPage!</h1>
+<h1>Creating a Trivia Game WebPage!</h1>
 <p><b>TASK:</b> Create a webpage containing a trivia game about web development, using HTML, external CSS and internal JS added on the head tag.</p>
 
 <p><b>Instructions:</b>
