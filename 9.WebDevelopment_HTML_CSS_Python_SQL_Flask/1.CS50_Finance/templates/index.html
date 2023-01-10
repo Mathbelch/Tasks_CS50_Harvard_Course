@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    My Account
+{% endblock %}
+
+{% block main %}
+    <table>
+        <thead>
+            <tr class="titles">
+                <th>Symbol</th>
+                <th>Company</th>
+                <th>Shares</th>
+                <th>Price</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% if stocks %}
+            {% for stock in stocks %}
+                <tr>
+                    <td>{{ stock.Symbol }}</td>
+                    <td>{{ stock.name }}</td>
+                    <td>{{ stock.amount }}</td>
+                    <td>{{ stock.price }}</td>
+                    <td>{{ stock.total }}</td>
+                </tr>
+            {% endfor %}
+            {% endif %}
+            <tr>
+                <td>CASH</td>
+                <td colspan="3"></td>
+                <td>{{ cash }}</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="4"></td>
+                <td><b>{{ totalAmount }}</b></td>
+            </tr>
+        </tbody>
+    </table>
+{% endblock %}
+
