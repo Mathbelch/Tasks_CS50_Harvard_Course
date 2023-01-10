@@ -11,3 +11,4 @@
 
 <p>Check the result of this task below</p>
 
+![CS50_Finance_AdobeExpress](https://user-images.githubusercontent.com/109366042/211617130-20ce1a77-2d52-41e4-9d89-84afdb2525d8.gif)
