@@ -6,9 +6,11 @@
 <li>The distribution code is partially done, so we must complete the routes: register, quote, buy, index, sell and history;</li>
 <li>We must use only python for this task, together with SQL, HTML and CSS;</li>
 <li>The server side must be done using the Flask library from python;</li>
+<li>To be able to connect with the IEX'S API it is necessary to export the API code, folowing the instructions availabe on their <a href="https://iexcloud.io/cloud-login#/register/" alt="_blank">webbsite</a>;</li>
 <li>Check out the <a href="https://cs50.harvard.edu/x/2021/psets/9/finance/" alt="_blank">intructions' details</a> giving by CS50 Course;</li>
 </ul>
 
 <p>Check the result of this task below</p>
 
-![CS50_Finance_AdobeExpress](https://user-images.githubusercontent.com/109366042/211617130-20ce1a77-2d52-41e4-9d89-84afdb2525d8.gif)
+https://user-images.githubusercontent.com/109366042/211621781-65f1e3b9-6997-4932-a11d-edb11d3b003c.mp4
+
