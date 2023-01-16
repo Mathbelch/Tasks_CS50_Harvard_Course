@@ -3,37 +3,37 @@
 <br>
 <ul>
   <li>Module 1: Basic of #C Language!
-  <ol>
+  <ol type="1">
     <li>Mario Pyramid; </li>
     <li>Ambitious Algorithm; </li>
     <li>Population Growth Rate; </li>
     <li>Credit Card Validation; </li>
   </ol></li>
   <li>Module 2: Arrays, Pointers and Files in #C!
-  <ol>
+  <ol type="1">
     <li>Coleman-Liau Readability Index; </li>
     <li>Caesar Cryptography; </li>
     <li>Substitution Cryptography; </li>
     <li>Scrabble Game; </li>
   </ol></li>
   <li>Module 3: Algoritgms of Elections using #C!
-  <ol>
+  <ol type="1">
     <li>Plurality; </li>
     <li>Ranked Choice Runoff; </li>
     <li>Ranked Choice Tideman; </li>
   </ol></li>
   <li>Module 4: Memory Usage and File Formats in #C!
-  <ol>
+  <ol type="1">
     <li>Developing Filters for Images in .bmp Format; </li>
     <li>Recovering .jpg Images; </li>
     <li>Changing Volume for .rar Audios; </li>
   </ol></li>
   <li>Module 5: Data Structures in #C!
-  <ol>
+  <ol type="1">
     <li>Blood Type Inheritance; </li>
   </ol></li>
   <li>Module 6: Basic of Python Language!
-  <ol>
+  <ol type="1">
     <li>Mario Pyramid; </li>
     <li>Ambitious Algorithm; </li>
     <li>Coleman-Liau Readability Index; </li>
@@ -43,18 +43,18 @@
     <li>QR Code Generator; </li>
   </ol></li>
   <li>Module 7: SQL Database!
-  <ol>
+  <ol type="1">
     <li>IMDB; </li>
     <li>Fiftyville; </li>
     <li>Songs; </li>
   </ol></li>
   <li>Module 8: Web Development I - HTML, CSS & JS!
-  <ol>
+  <ol type="1">
     <li>My Homepage; </li>
     <li>Trivia Game; </li>
   </ol></li>
   <li>Module 9: Web Development II - HTML, CSS, Python, Flask & SQL!
-  <ol>
+  <ol type="1">
     <li>CS50 Finance; </li>
     <li>Birthdays List; </li>
   </ol></li>
